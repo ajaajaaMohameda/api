@@ -29,3 +29,10 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\Serializer\EventSubscriber\ArticleSubscriber:
+        tags: 
+            - name: jms_serializer.event_subscriber
+    App\Serializer\Handler\ArticleHandler:
+        tags:
+            - name: jms_serialzer.subscribing_handler
