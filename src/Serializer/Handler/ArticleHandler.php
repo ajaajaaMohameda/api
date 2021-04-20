@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Serializer\Handler;
 use App\Entity\Article;
 use JMS\Serializer\GraphNavigator;
 use JMS\Serializer\Handler\SubscribingHandlerInterface;
